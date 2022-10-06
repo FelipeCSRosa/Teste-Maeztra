@@ -1,0 +1,22 @@
+.header-notification {
+  background-color: #353535;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 24px;
+}
+
+.header-notification p{
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+
+@media screen and (max-width:769px) {
+  .header-notification p{
+    font-size: 10px;
+  }
+}

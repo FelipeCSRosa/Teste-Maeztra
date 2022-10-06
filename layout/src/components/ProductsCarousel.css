@@ -1,0 +1,24 @@
+.productsCarousel .productsCarousel-titulo{
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 49px;
+  text-align: center;
+  color: #353535;
+  margin-bottom: 24px;
+}
+
+.productsCarousel .rec-pagination{
+  display: none;
+}
+
+@media screen and (max-width:769px) {
+  .productsCarousel .productsCarousel-titulo{
+    margin-bottom: 16px;
+  }
+
+  .productsCarousel .rec-arrow{
+    display: none;
+  }
+}

@@ -1,0 +1,10 @@
+.variation{
+  width: 27px;
+  height: 27px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.selected{
+  border: 2px solid #353535;
+}

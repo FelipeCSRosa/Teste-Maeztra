@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Carousel*/
+.rec-slider-container{
+  margin: 0 !important;
+}
+
+.rec-arrow{
+  position: absolute;
+  box-shadow: none !important;
+  background-color: rgba(103,58,183,0) !important;
+  font-size: 32px !important;
+  font-weight: 900;
+  color: black !important;
+}
+
+.rec-arrow:disabled{
+  color: rgb(145, 141, 141) !important;
+  cursor: pointer !important;
+}
+
+.rec-arrow:hover{
+  color: rgb(255, 255, 255) !important;
+}
+
+.rec-arrow:disabled:hover{
+  color: rgb(145, 141, 141) !important;
+}
+
+.rec-arrow-right{
+  right: 0;
+}
+
+.rec-arrow-left{
+  z-index: 10;
+}
+
+.rec-pagination{
+  position: absolute;
+  margin-top: 580px !important;
+}
+
+.rec-dot{
+  box-shadow: 0 0 1px 2px rgb(250 165 0) !important;
+}
+
+.rec-dot_active{
+  background-color:  #FAA500 !important;
+}
+
+@media screen and (max-width:769px) {
+  .rec-pagination{
+    margin-top: 300px !important;
+  }
+}
