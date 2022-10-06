@@ -1,8 +1,8 @@
-function filtraArray(arr){
-    let filtered = arr.filter((item, index) => arr.indexOf(item) != index);
-    filtered = filtered.filter((item, index) => filtered.indexOf(item) == index);
+function verificaDuplicado(arr){
+    let duplicados = arr.filter((item, index) => arr.indexOf(item) != index);
+    duplicados = duplicados.filter((item, index) => duplicados.indexOf(item) == index);
 
-    console.log(filtered);
+    console.log(duplicados);
 }
 
-filtraArray([1,2,3,4,5,5,10,21,11,14,18,14])
+verificaDuplicado([4,5,44,98,4,5,6,7])

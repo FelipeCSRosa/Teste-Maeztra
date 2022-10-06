@@ -1,7 +1,7 @@
 //se for impar ja ta errado
 //se abre e fecha em par -
 
-function sequencia(str){
+function validaSequencia(str){
   const arr = Array.from(str);
   let arrNum = []
   arr.map(e => {
@@ -27,7 +27,6 @@ function sequencia(str){
         arrNum.push(31)
         break;
       default:
-       //console.log("Valor invalido");
     }
   })
 
@@ -35,14 +34,11 @@ function sequencia(str){
 
   function testeArr(arrTestar){
     arrTestar.forEach((e, idx) => {
-       //console.log("element", e)
         let idxOp = idx
         let idxCl
         for(let i = idx; i < arrTestar.length; i++){
-         //console.log("loop", i)
           if(arrTestar[i] == e+1){
             idxCl = i
-           //console.log(idxOp, idxCl)
             if((idxOp%2 != 0 && idxCl%2 != 0) || (idxOp%2 == 0 && idxCl%2 == 0)){
               retorno = false
             }else{
@@ -52,10 +48,8 @@ function sequencia(str){
               testeArr(arrTestar)
               break
             }
-           //console.log(retorno)
             break
           }else{
-           //console.log("entrando no else")
             retorno = false
           }
         }
@@ -63,10 +57,7 @@ function sequencia(str){
   }
 
   testeArr(arrNum)
-  console.log("final", retorno)
+  retorno ? console.log("É uma sequência válida") : console.log("Não é uma sequência válida")
 }
 
-sequencia("[{}([)]][[]]");
-
-/*  1 2 3 4 5
-   { [ ( ( ) ] }*/
+validaSequencia("{[(()]}");
