@@ -14,7 +14,7 @@ function Product({productInfo}){
 
   return(
     <div className="product-card">
-      <img src={productInfo[index].image} alt="" />
+      <img src={productInfo[index].image} alt="" draggable="false"/>
       <div className='info-container'>
         <div className="variation-container"> 
           {
